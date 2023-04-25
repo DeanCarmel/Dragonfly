@@ -14,11 +14,11 @@ After classification- one can analyze the results with suitable graphs. This is 
 To create such plots one should first choose the parameter with which he wishes to compare the classification results between Dragonfly and Deepcci 
 (i.e. background flows, sub- interval sizes, etc.) and then activate the function which creates the appropriate graph. 
 Note that it is necessary to set the results path accordingly.
-To create graph simply run “python thesis_graphs_utils.py”. Choose the graph you wish to create by calling to the specific function from this file in the main function.
+To create a graph simply run “python thesis_graphs_utils.py”. Choose the graph you wish to create by calling the specific function from this file in the main function.
 
 Run simulation (physical implementation- including cloud utilization):
 To create more experiments- for training and for testing one must first implement the physical environment as described in the paper. 
-The implementation of the physical simulation to be found within the “physical_sim” sub- directory.
+The implementation of the physical simulation can be found within the “physical_sim” sub- directory.
 After acquiring raw data- one needs to translate the data files to the system’s dataframes- using “online_filtering_launcher.py” (“python oמline_filtering_launcher.py”) which uses “online filtering.py”- this is where we calculate the inputs (i.e. CBIQ, etc.) and uses dropping samples- to be set as desired.
 
 Run simulation (mininet implementation):
